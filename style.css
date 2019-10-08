@@ -1,0 +1,156 @@
+
+header{
+
+    width: 80%;
+    height:20vh ;
+    background-color: #F5F5F5;
+    margin-left: 10%;
+}
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    background-color: black;
+    justify-content:space-around;
+     
+}
+
+nav li
+{
+    margin-right: 30px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: whitesmoke;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color:#ADFF2F;
+    border-bottom: 3px solid #ADFF2F;
+}
+section{display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    height:40vh ;
+    
+    margin-left: 10%;
+}
+aside{
+    width: 30%;
+    height:40vh ;
+   
+}
+article{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 25vh;
+  
+    
+
+}
+article img{
+    height: 20vh;
+    margin : 0px 20px 0px 20px;
+}
+.t {
+    height: auto;
+    
+    padding-top: 5px;
+    border-top: 3px solid #87CEFA;
+    border-bottom: 3px solid #87CEFA;
+}
+.g {
+    height: 5vh;
+    width: 80%;
+    background-color: aqua;
+    transform: skewX(20deg);
+    margin-left: 10%;
+    margin-top: 2vh;
+
+}
+.mil
+{
+padding-left: 20%;
+}
+.g2 {
+    height: 5vh;
+    width: 80%;
+    background-color: aqua;
+    transform: skewX(20deg);
+    margin-left: 10%;
+    margin-top: 5vh;
+
+}
+.p{
+    height: 20vh;
+    width: 80%;
+    background-color:black;
+    margin-left: 10%;
+}
+.txt{
+    height: 60vh;
+    width: 80%;
+    background-color:rgb(87, 32, 139);
+    margin-left: 10%;
+}
+@media screen and (max-width: 200px) {
+
+}
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container a {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    color: #f4f4f4;
+    text-transform: uppercase;
+  }
+  
+  .btn {
+    text-decoration: none;
+    border: 1px solid rgb(146, 148, 248);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn:hover {
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+  }
+  
+  .btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(146, 148, 248, 0.4),
+      transparent
+    );
+    transition: all 650ms;
+  }
+  
+  .btn:hover:before {
+    left: 100%;
+  }
+  
