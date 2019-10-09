@@ -7,52 +7,102 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet">
   
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 
   <title>Document</title>
+  <script src="https://kit.fontawesome.com/d4ea620571.js" crossorigin="anonymous"></script>
 </head>
 <body>
+     <div class="contain">
      <header>
-<h1>MERABET ASSED</h1>
+<h1>MERABET Mohamed Assed</h1>
 <h4>developpeur web et web-mobile</h4>
-<nav>
-        <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">CV</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-</nav>
+
      </header>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <a class="navbar-brand" href="#">Navbar</a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                 <div class="navbar-nav">
+                   <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                   <a class="nav-item nav-link" href="#">Features</a>
+                   <a class="nav-item nav-link" href="#">Pricing</a>
+                   <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                 </div>
+               </div>
+             </nav>
      <section>
        <article>
-           <img src="identite-officielle.jpg"   alt="photo" class="rounded-circle">
+           <img src="identite-officielle.jpg"   alt="photo" class="rounded-circle rotate-center">
            <div class="t">
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed expedita ipsa ipsum ex architecto sapiente earum ad illum ullam dolorem tenetur dignissimos et, officiis blanditiis illo. Alias suscipit beatae fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, unde facilis culpa accusantium corporis velit mollitia necessitatibus minus nesciunt atque ea blanditiis nostrum facere quo aliquam eligendi sed accusamus eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sed molestiae tenetur provident placeat nesciunt, inventore blanditiis labore eveniet minima, magni quidem doloribus illum magnam reprehenderit sequi, quisquam cum neque.</div>
-       </article>
+                    <div class="g3">à propos</div>
+                    <div class="t2">
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed expedita ipsa ipsum ex architecto sapiente earum ad illum ullam dolorem tenetur dignissimos et, officiis blanditiis illo. Alias suscipit beatae fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, unde facilis culpa accusantium corporis velit mollitia necessitatibus minus nesciunt atque ea blanditiis nostrum facere quo aliquam eligendi sed accusamus eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sed molestiae tenetur provident placeat nesciunt, inventore blanditiis labore eveniet minima, magni quidem doloribus illum magnam reprehenderit sequi, quisquam cum neque.
+</div>
+</div>
+</article>
         <aside>
-<div class="g"></div>
+<div class="g">Coordonnées</div>
 <div class="mil">
-    <p>naissance :07-04-1991</p>
-    <p>web : www.google.fr</p>
-    <p>telephone : 07-67-62-78-37</p>
-    <p>email: assed2369@gmail.com</p>
+    
+    <i class="fas fa-at"> &nbsp web : www.google.fr</i>
+   
+    <i class="fas fa-phone">&nbsp telephone : 07-67-62-78-37</i>
+    <i class="fas fa-envelope-open-text">&nbsp email: assed2369@gmail.com</i>
+
+          <a href="https://github.com/phoenix23000" alt="github" target="_blank"><i class="fab fa-github" >&nbsp GitHub</i></a><br/>
+         <a href="" ><i class="fab fa-facebook" target="_blank"></i>&nbsp FaceBook</a><br>
+         <a href="https://www.linkedin.com/in/m-assed-merabet-804a24184/" target="_blank"><i class="fab fa-linkedin">&nbsp LinkedIn</i></a>
 
 </div>
-<div class="g2"></div>
+
           </aside>
           
      </section>
      <div class="p">
-            
+               <div class="g2">Compétences</div>
+               <div class="p2">
+          <img src="html-et-css.jpg" alt="htmlcss" class="heartbeat rounded-circle">
+          <img src="phpi.png" alt="php" class="heartbeat rounded-circle">
+          <img src="symfony.png" alt="symfony" class="heartbeat rounded-circle">
+          <img src="mysql.jpeg" alt="mysql" class="heartbeat rounded-circle">
+          <img src="js.jpg" alt="javascript" class="heartbeat rounded-circle">
+          <img src="git-github.png" alt="git-github" class="heartbeat rounded-circle">
+          <img src="https://cdn.svgporn.com/logos/angular-icon.svg"  alt="angularjs" class="heartbeat rounded-circle">
      </div>
-          <div class="txt"></div>
+          
+       
+     </div>
+          <div class="txt">
+             
+          </div>
      
      <footer>
 
      </footer>
+</div>
+     <script>
+     var navigation = responsiveNav(".nav-collapse", {
+  animate: true,                    // Boolean: Use CSS3 transitions, true or false
+  transition: 284,                  // Integer: Speed of the transition, in milliseconds
+  label: "Menu",                    // String: Label for the navigation toggle
+  insert: "before",                  // String: Insert the toggle before or after the navigation
+  customToggle: "",                 // Selector: Specify the ID of a custom toggle
+  closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+  openPos: "relative",              // String: Position of the opened nav, relative or static
+  navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+  navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+  jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+  init: function(){},               // Function: Init callback
+  open: function(){},               // Function: Open callback
+  close: function(){}               // Function: Close callback
+});
+     </script>
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-     
+
 </body>
 </html>
