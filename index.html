@@ -30,6 +30,7 @@
                    <a class="nav-item nav-link" href="#ac">Autres Competences</a>
                    <a class="nav-item nav-link" href="#ci">Centres d'Interets</a>
                    <a class="nav-item nav-link" href="#ci">A Propos De Moi</a>
+                   <a class="nav-item nav-link" href="#co">Contact</a>
                  </div>
                </div>
              </nav>
@@ -129,10 +130,26 @@
           <div class="g7">A propos de moi</div>
                <div class="g77"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto reprehenderit, suscipit fugiat pariatur soluta error et ex ipsa iste dolor doloremque explicabo minima vel quas? Quasi dolores doloremque ad hic. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit laboriosam aperiam velit atque necessitatibus, qui quasi, aliquam alias voluptate dolorem omnis cumque ratione quisquam incidunt ea eligendi inventore, eveniet suscipit.
      </div>
-     <footer>
-
-     </footer>
 </div>
+     <footer>
+<h3 id="co">Contact</h3>
+<form action="contact.php" method="$_POST">
+          <label for="name">Entrez Votre Nom: </label>
+          <input type="text" name="name" id="name" ><br>
+          <label for="email">Entrez Votre e-mail: </label>
+    <input type="email" name="email" id="email" ><br>
+    <label for="msg"> Message :</label>
+        <textarea id="msg" name="user_message"></textarea><br>
+    <input type="submit" value="Envoyez Votre Message">
+
+
+
+
+
+
+</form>
+     </footer>
+
      <script>
      var navigation = responsiveNav(".nav-collapse", {
   animate: true,                    // Boolean: Use CSS3 transitions, true or false
